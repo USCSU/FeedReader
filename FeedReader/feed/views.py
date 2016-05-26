@@ -1,3 +1,10 @@
 from django.shortcuts import render
+from feed.models import FeedToSubscribers
+# def subscribe(request):
+# 	if request == 'post':
 
-# Create your views here.
+
+# def unsubscribe:
+
+# def home(request):
+# 	if request == 'get':

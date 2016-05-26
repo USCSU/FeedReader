@@ -1,0 +1,86 @@
+.border{
+  border-bottom:1px solid #ddd;
+  padding-bottom:20px
+  }
+
+  table{width:100%}
+
+.deleterow{cursor:pointer}
+.borderless td, .borderless th {
+    border: none;
+}
+
+img {
+    max-height: 25%;
+    max-width:25%;
+}
+span {
+    display: inline-block;
+}
+
+.navbar-custom {
+	/*background-color: #708090;*/
+  	border-color: #ecf0f1;
+	/*background-color:#708090;*/
+    color:#6A5ACD;
+  	border-radius:2;
+}
+/*purple*/
+.table tbody tr.Database_Team {
+  background-color: #fff2cc;
+}
+
+/*green*/
+.table tbody tr.Systems_Team {
+  background-color: #ccccff;
+}
+
+.table tbody tr.IT_Service_Desk {
+  background-color: #ffcccc;
+}
+
+.table tbody tr.InfoSec {
+  background-color: #ccffcc;
+}
+.table tbody tr.Data_Center {
+  background-color: #ccffff;
+}
+
+.table tbody tr.Network_Team {
+  background-color: #ffccee;
+}
+
+.table tbody tr.NOC {
+  background-color: #e6e6e6;
+}
+.table tbody tr.PSTN_Team {
+  background-color: #eeeedd;
+}
+.table tbody tr.Sustaining_team {
+  background-color: #80ccff;
+}
+.table tbody tr.Infra_team {
+  background-color: #ff704d;
+}
+
+
+
+
+.upload-drop-zone {
+  height: 200px;
+  border-width: 2px;
+  margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+  color: #ccc;
+  border-style: dashed;
+  border-color: #ccc;
+  line-height: 200px;
+  text-align: center
+}
+.upload-drop-zone.drop {
+  color: #222;
+  border-color: #222;
+}
