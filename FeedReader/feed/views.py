@@ -84,7 +84,7 @@ def getArticles(request):
 				'media_type':'application/json'
 			}
 		else:
-			idx=0
+			idx=1
 			for singleFeed in feeds:
 				singleArticles = Article.objects.filter(feed = singleFeed)
 				for item in singleArticles:
@@ -103,7 +103,7 @@ def getArticles(request):
 				}
 			else:
 				data = {'status':200,'creator':username,'media_type':'application/json'}
-				data['articles':articles]
+				data['articles']=articles
 		#get all articles for each feeds
 		return render(request,'feed/getArticles.html',{'data':data})
 	else :
