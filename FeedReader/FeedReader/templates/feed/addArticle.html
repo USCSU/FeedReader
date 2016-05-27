@@ -1,0 +1,28 @@
+{%extends "base.html"%}
+{%block content%}
+
+<BR><BR><BR><BR><BR><BR>
+ <title>Add Article</title>
+ <div class = 'container'>
+ <label><h3>Add Article</h3></label><br>
+ <label>user</label><br>
+  <label name = "user" class="form-control" id = "user">{{username}}</label>
+ <form method ='post' action = "{%url 'addArticle'%}">
+ {%csrf_token%}
+  <fieldset class="form-group">
+    <label >Media type</label>
+    <label name = "mediatype" class="form-control" id = "mediatype">application/json</label>
+  </fieldset>
+  <fieldset class="form-group">
+  	<label> Content</label>
+  	<textarea class="form-control" id="content" rows="10" name="content"></textarea>
+  </fieldset>
+  <br>
+  <fieldset align ='center'>
+  	<a href="{%url 'index'%}" class = 'btn btn-lg btn-warning'>Back</a>
+  	<button type="submit" class="btn btn-lg btn-primary">Post</button></form>
+  </fieldset>
+ </form>
+ </div>
+
+{%endblock%} 

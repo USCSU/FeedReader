@@ -1,0 +1,37 @@
+{%extends "base.html"%}
+{%block content%}
+ 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <br><br>
+          <ul class="nav nav-sidebar">
+
+            <br>
+            <br>
+            <li>
+            <a href="{%url 'subscribe' %}"  class = "confirm-delete" id = "sub" role="button">Subscribe Feed</a>
+            </li>
+            <li>
+            <a href="{%url 'unsubscribe' %}"  class = "confirm-delete" id = "unsub" role="button">Unsubscribe Feed</a>
+            </li>
+            <li>
+            <a href="{%url 'addArticle'%}"  class = "confirm-delete" id = "add" role="button">Add article to feed</a>
+            </li>
+            <li>
+            <a href="{%url 'getAllFeeds'%}"  class = "confirm-delete" id = "getFeed" role="button">Get all feeds</a>
+            </li>
+            <li>
+            <a href="{%url 'getArticles'%}"  class = "confirm-delete" id = "getArticle" role="button">Get all articles</a>
+            </li>
+            <li>
+            <a href="{%url 'addFeeds'%}"  class = "confirm-delete" id = "addFeed" role="button">Add Feed</a>
+            </li>
+
+          </ul>
+        </div>
+
+
+         
+ 
+          {%endblock%} 

@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 class Feed(models.Model):
 	url = models.CharField(max_length=256)
+	name = models.CharField(max_length=100)
 	creator = models.ForeignKey(User)
 	def __unicode__(self):
 		return self.url

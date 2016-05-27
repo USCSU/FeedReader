@@ -1,0 +1,10 @@
+{%extends "base.html"%}
+{%block content%}
+<BR><BR><BR><BR><BR><BR>
+<div class = 'container'>
+ <label>All feeds</label><br>
+ <pre><textarea class="form-control" id="content" rows="18" name="content">{{data}}</textarea></pre>
+ 	<a href="{%url 'index'%}" class = 'btn btn-lg btn-warning'>Back</a>
+  
+
+{%endblock%} 
